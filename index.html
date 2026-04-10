@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<link rel="stylesheet" href="styles.css" />
+<title>SONY Vegas Pro 13.0 Classics Effects</title>
+</head>
+<body>
+<div id="app">
+  <div id="left">
+    <div class="section">
+      <label class="filebtn">
+        Load media
+        <input id="file" type="file" accept="video,*/*,image/*" />
+      </label>
+      <button id="useSample">Use sample video</button>
+    </div>
+
+    <div class="section">
+      <div class="list" id="effectsList"></div>
+    </div>
+  </div>
+
+  <div id="center">
+    <div id="previewWrap">
+      <video id="media" playsinline crossorigin="anonymous" muted loop></video>
+      <canvas id="canvas"></canvas>
+      <div id="overlayHint">Tap controls to adjust effect</div>
+    </div>
+    <div id="controls" class="hidden"></div>
+    <div id="bottomBar">
+      <button id="reset">Reset</button>
+      <button id="exportPNG">Export PNG</button>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
